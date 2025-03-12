@@ -32,6 +32,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 15px 30px;
         }
         .social-media {
             display: flex;
@@ -66,7 +69,8 @@
         }
         .body-image {
             position: relative;
-            text-align: center;
+            text-align:right;
+    
         }
         .body-button {
             position: absolute;
@@ -87,12 +91,22 @@
             color: black;
         }
         .body-title {
-            position: absolute;
+            position:absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-40%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 200px;
+            border-radius: 20px;
+        }
+        .body-text {
+            position:absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 30px 200px;
+            border-radius: 20px;
         }
