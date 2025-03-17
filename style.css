@@ -72,6 +72,11 @@
             text-align:right;
     
         }
+        .vision-image {
+        position: relative;
+        text-align:right;
+    }
+        
         .body-button {
             position: absolute;
             top: 50%;
@@ -92,13 +97,14 @@
         }
         .body-title {
             position:absolute;
-            top: 50%;
-            left: 30%;
-            transform: translate(-40%, -50%);
+            top: 55%;
+            left: 5%;
+            transform: translate(-5%, -55%);
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px 200px;
+            padding: 30px 60px;
             border-radius: 20px;
+            font-size:medium;
         }
         .body-text {
             position:absolute;
@@ -109,4 +115,52 @@
             background-color: rgba(0, 0, 0, 0.5);
             padding: 30px 200px;
             border-radius: 20px;
+            
         }
+        .wedding-text {
+            position:absolute;
+            top: 255%;
+            left: 54%;
+            transform: translate(-10%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:medium;
+        }
+        .vision-title {
+            position:absolute;
+            top: 52%;
+            left: 4%;
+            transform: translate(-5%, -55%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:medium;
+            
+        }
+        .contac-text {
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(-10%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:x-large;
+        }
+        
+        .contact-pie {
+            top: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+        .mapa-image {
+            position: relative;
+            text-align:right;
+        }
+        
