@@ -1,8 +1,10 @@
-        body {
+        body, html {
             font-family: Bahnschrift SemiLight;
             margin: 0;
             padding: 0;
+            height: 100vh;
         }
+        
         .navbar {
             display: flex;
             background-color: #333;
@@ -22,10 +24,11 @@
             position: relative;
             text-align: center;
             color: white;
+            
         }
         .header img {
             width: 100%;
-            height: auto;
+            height:min-content
         }
         .header-text {
             position: absolute;
@@ -67,9 +70,11 @@
             font-size: 16px;
             cursor: pointer;
         }
-        .body-image {
+        .body-image{
             position: relative;
             text-align:right;
+            width: 100%;
+            height:min-content
     
         }
         .vision-image {
@@ -109,47 +114,13 @@
         .body-text {
             position:absolute;
             top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(30%, -50%);
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px 200px;
-            border-radius: 20px;
+            padding: 20px 50px;
+            border-radius: 30px;
+            text-align: center;
             
-        }
-        .wedding-text {
-            position:absolute;
-            top: 255%;
-            left: 54%;
-            transform: translate(-10%, -50%);
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px 60px;
-            border-radius: 20px;
-            font-size:medium;
-        }
-        .vision-title {
-            position:absolute;
-            top: 52%;
-            left: 4%;
-            transform: translate(-5%, -55%);
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px 60px;
-            border-radius: 20px;
-            font-size:medium;
-            
-        }
-        .contac-text {
-            position:absolute;
-            top: 75%;
-            left: 10%;
-            transform: translate(-10%, -50%);
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 30px 60px;
-            border-radius: 20px;
-            font-size:x-large;
         }
         
         .contact-pie {
@@ -163,4 +134,309 @@
             position: relative;
             text-align:right;
         }
+        .circ-image {
+            position:absolute;
+            text-align:left;
+            margin-left: 250px;
+            top: 45%;
+            
+        }
+
+        .historia-text {
+            position:relative;
+            top: 50%;
+            transform: translate(-30%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .wedding-text {
+            position:relative;
+            top: 50%;
+            transform: translate(-30%, 15%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .wedding-image{
+            position:absolute;
+            text-align:left;
+            margin-left: 700px;
+            top: 45%;
+        }
+        .vision-image{
+            position:absolute;
+            text-align:left;
+            margin-left: 1150px;
+            top: 45%;
+        }
+        .vision-title{
+            position:relative;
+            top: 50%;
+            transform: translate(-30%, 12%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:left;
+            font-size: 8px;
+        }
+        .contac-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 15px 30px;
+        }
+        
+        .contac-text {
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(-10%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:small;
+        }
+        .header-whats{
+            position:absolute;
+            text-align:left;
+            margin-left: 130px;
+            top: 76%;
+            width: 50px;
+        }
+        .preg-uno{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(-30%, -200%);
+            color: rgb(0, 0, 0);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:small;
+        }
+        .preg-dos{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(50%, -200%);
+            color: rgb(0, 0, 0);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:small;
+        }
+        .preg-tres{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(145%, -200%);
+            color: rgb(0, 0, 0);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:small;
+        }
+        .preg-cuatro{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(180%, -200%);
+            color: rgb(0, 0, 0);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size:small;
+        }
+        .resp-uno{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(-30%, -80%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+        .resp-dos{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(100%, -80%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 60px;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+        .resp-tres{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(182%, -80%);
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 40px;
+            border-radius: 20px;
+            font-size: 8px;
+        }
+        .resp-cuatro{
+            position:absolute;
+            top: 75%;
+            left: 10%;
+            transform: translate(260%, -80%);
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 30px;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+        .circ-uno{
+            position:absolute;
+            text-align:left;
+            margin-left: 150px;
+            top: 45%;
+        }
+        .circ-tres{
+            position:absolute;
+            text-align:left;
+            margin-left: 850px;
+            top: 45%;
+        }
+        .circ-cua{
+            position:absolute;
+            text-align:left;
+            margin-left: 1200px;
+            top: 45%;
+        }
+        .circ-dos{
+        position:absolute;
+            text-align:left;
+            margin-left: 500px;
+            top: 45%;
+        }
+        .text-uno{
+            position:relative;
+            top: 50%;
+            transform: translate(-20%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .text-dos{
+            position:relative;
+            top: 50%;
+            transform: translate(-25%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .text-tres{
+            position:relative;
+            top: 50%;
+            transform: translate(-20%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .text-cua{
+            position:relative;
+            top: 50%;
+            transform: translate(-15%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .circ-cin{
+            position:absolute;
+            text-align:left;
+            margin-left: 150px;
+            top: 90%;
+        }
+        .circ-seis{
+            position:absolute;
+            text-align:left;
+            margin-left: 500px;
+            top: 90%;
+        }
+        .circ-sie{
+            position:absolute;
+            text-align:left;
+            margin-left: 850px;
+            top: 90%;
+        }
+        .circ-och{
+            position:absolute;
+            text-align:left;
+            margin-left: 1200px;
+            top: 90%;
+        }
+        .text-cin{
+            position:relative;
+            top: 50%;
+            transform: translate(-20%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .text-seis{
+            position:relative;
+            top: 50%;
+            transform: translate(-25%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .text-sie{
+            position:relative;
+            top: 50%;
+            transform: translate(-13%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+        .text-och{
+            position:relative;
+            top: 50%;
+            transform: translate(-20%, 10%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px 50px;
+            border-radius: 30px;
+            text-align:justify;
+            font-size: 8px;
+        }
+
+
+       
+            
         
