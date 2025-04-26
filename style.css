@@ -1,8 +1,8 @@
-        body, html {
+        body {
             font-family: Bahnschrift SemiLight;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            height: 100vh;;
         }
         
         .navbar {
@@ -435,6 +435,78 @@
             text-align:justify;
             font-size: 8px;
         }
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            grid-auto-rows: 220px;
+            gap: 10px;
+            grid-auto-flow: dense;
+            padding: 0;
+          }
+          
+          .foto {
+            overflow: hidden;
+            border-radius: 10px;
+          }
+          
+          .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+          }
+          
+          .foto:hover img {
+            transform: scale(1.05);
+          }
+          
+          /* Efecto collage con variaciones de tamaño */
+          .foto:nth-child(3n) {
+            grid-row: span 2;
+          }
+          
+          .foto:nth-child(4n) {
+            grid-column: span 2;
+          }
+          .galeria-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 15px 30px;
+        }
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+          }
+          
+          .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+            transform: scale(1);
+          }
+          
+          body.lightbox-activo {
+            overflow: hidden;
+          }
+          .retrato {
+            transform: translate(0%, -100%);
+          }
+        
 
 
        

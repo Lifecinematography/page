@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Cinematography</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <nav class="navbar">
+    <ul>
+       <a href="index.html">Inicio</a>
+        <a href="conocenos.html">Conocenos</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="galeria.html">Galería</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="preguntas.html">Preguntas frecuentes</a>
+    
+    </ul>
+</nav>
+<div class="header">
+    <img src="IMG/portadamini.jpg" alt="Header Image">
+
+    <div class="galeria-title">
+        <h1>Galería
+        </h1>
+    </div>
+</div>
+<br>
+<br>
+
+        <div class="collage">
+    <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+    <img id="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+          <div class="foto"><img src="IMG/preboda.png" alt="preboda" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/sesion.png" alt="sesion" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/galeriados.png" alt="quince" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/paisaje.jpg" alt="paisaje" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/fotoanillo.jpg" alt="fotoanillo" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/evento.png" alt="evento" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/dron.jpg" alt="dron" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/quince.png" alt="galeriados" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/fotoboda.jpg" alt="fotoboda" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/fotovision.jpg" alt="fotovision" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/fotoaire.png" alt="retrato" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/retrato.jpg" alt="fotoaire" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/camino.jpg" alt="camino" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/sombrero.jpg" alt="pareja" onclick="abrirLightbox(this)"></div>
+          <div class="foto"><img src="IMG/pareja.jpg" alt="sombrero" onclick="abrirLightbox(this)"></div>
+        </div>
+      </section>
+
+    </footer>
+    <br>
+    <br>
+    
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/lifecinematography/" target="_blank">
+                <img src="ICO/FB-ICON.png" alt="Facebook" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.instagram.com/lifecinematographymx?igsh=ZTZxaWY4YXh5ODQx" target="_blank">
+                <img src="ICO/INSTAGRAM-ICON.png" alt="Instagram" style="width:50px;height:50px;">
+            </a>
+        </div>
+        <div class="contact-pie">
+            <p>Ubicación: Calle 20 de noviembre #186 pitillal centro, tercer piso.</p>
+        </div>
+    </footer>
+    
+    <script>
+        function abrirLightbox(imagen) {
+          const lightbox = document.getElementById("lightbox");
+          const lightboxImg = document.getElementById("lightbox-img");
+          lightboxImg.src = imagen.src;
+          lightbox.style.display = "flex";
+          document.body.classList.add("lightbox-activo");
+        }
+      
+        function cerrarLightbox() {
+          const lightbox = document.getElementById("lightbox");
+          lightbox.style.display = "none";
+          document.body.classList.remove("lightbox-activo");
+        }
+      </script>
+
+</body>
+</html>
